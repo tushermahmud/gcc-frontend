@@ -26,6 +26,31 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+input.peer:focus ~ label span.peer-focus\:\!text-transparent {
+  --tw-text-opacity: 1 !important;
+  color: transparent !important;
+}
+.select-form label::after.after\:-bottom-1\.5::after {
+  content: var(--tw-content);
+  bottom: 0 /* -6px */;
+}
+.select-form label.after\:border-gray-900::after {
+  border-color: #5835dd !important;
+}
+
+.select-form-1 label.after\:border-gray-900::after {
+  border-color: #5835dd !important;
+}
+
+.select-form-1 > div ul {
+  width: 300px !important;
+}
+
+.select-form-1 > div {
+  width: 150px;
+  min-width: 120px !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
